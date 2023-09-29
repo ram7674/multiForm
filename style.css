@@ -1,0 +1,440 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.container-bg{
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+.left{
+    width: 35%;
+    background-image: url("images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.right{
+    width: 65%;
+    padding: 35px;
+    margin-left: 30px;
+}
+.card{
+    display: flex;
+    margin-bottom: 40px;
+}
+.step{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 7px;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.card-discription{
+    color: #a3a8a8;
+}
+.information{
+    color: #fff;
+}
+.card-heading{
+    font-weight: 600;
+    font-size: 30px;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 10px;
+}
+.card-description{
+    margin-bottom: 10px;
+    color: #a3a8a8;
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    height: 45px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #b4b8b7;
+}
+.inputs:hover{
+    border: 2px solid #02295a;
+}
+.card1-inputs{
+    margin-top: 25px;
+}
+.labels{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    height: 40px;
+    width: 110px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 17px;
+    align-items: center;
+    cursor: pointer;
+}
+.card-1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.error {
+    color: red;
+    font-size: 16px;
+  }
+.card1-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Step..2 */
+.card2-containers{
+    display: flex;
+    margin-top: 45px;
+}
+.container-cards2{
+    border: 2px solid #8fb1dc;
+    height: 150px;
+    width: 130px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.container-cards2:hover{
+    border: 2px solid #02295a;
+    cursor: pointer;
+}
+.card2-imges{
+    margin-bottom: 30px;
+}
+.card2-heading{
+    font-size: 18px;
+    color: #02295a;
+}
+.card2-plans{
+    font-size: 16px;
+    color: #a3a8a8;
+}
+.goback-btn{
+    border: none;
+    background-color: #fff;
+    color: #a3a8a8;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.goback-btn:hover{
+    color: #02295a;
+}
+.card-2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.card2-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* Step..3 */
+.card3-container{
+    border: 2px solid #93aac7;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card3-container:hover{
+    border: 2px solid #02295a;
+}
+.input-checkbox{
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+.card3-headings{
+    font-size: 18px;
+    color: #02295a;
+}
+.card3-plans{
+    font-size: 16px;
+    color: #a3a8a8;
+}
+.card3-montly-plans{
+    color: #02295a;
+}
+.card-3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card3-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* Step..4 */
+.card-4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card4-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.card4-bg{
+    background-color: #d2e1fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 40px 0 25px 0;
+}
+.card4-plans{
+    display: flex;
+    justify-content: space-between;
+    color: #a3a8a8;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.card4-plans:hover{
+    color: #02295a;
+    font-weight: 600;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid #a3a8a8;
+    margin: 20px 0;
+}
+.confirm-btn{
+    background-color: #7f6fa6;
+    color: #fff;
+    height: 40px;
+    width: 110px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 17px;
+    align-items: center;
+    cursor: pointer;
+}
+/* Thanking you section1 */
+.thanking{
+    justify-content: center;
+    text-align: center;
+}
+.gmail-dec{
+    font-weight: 600;
+}
+.img{
+    height: 70px;
+    margin: 30px;
+}
+.thanking-heading{
+    margin-bottom: 30px;
+}
+.thanking-discribetion{
+    font-size: 18px;
+}
+
+
+@media (max-width: 720px) {
+    body{
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+    }
+    .container-bg{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 0;
+    }
+    .left{
+        background-image: url("images/bg-sidebar-mobile.svg");
+        border-radius: 0;
+        height: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hide{
+        display: none !important;
+    }
+    .card{
+        margin-right: 20px;
+    }
+    .card-discription{
+        display: none;
+    }
+    .right{
+        height: 75%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .card-1{
+        height: 100%;
+        width: 100%;
+        background-color: #d2e1fa;
+        display: flex;
+        justify-content: center;
+    }
+    .form-container{
+        height: 85%;
+        width: 90%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+
+        position: relative;  /* this is the card top */
+        bottom: 70px;
+    }
+    .card1-btn{
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: end;
+        padding: 15px;
+    }
+    /*.............card2..............*/
+    .card-2{
+        display: flex;
+        justify-content: center;
+        background-color: #d2e1fa;
+    }
+    .card2-container1{
+        height: 97%;
+        width: 90%;
+        background-color: #a3a8a8;
+        border-radius: 10px;
+        position: relative;
+        bottom: 70px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .card2-containers{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards2{
+        height: 80px;
+        width: 90%;
+        display: flex;
+        margin: 10px;
+    }
+    .card2-btn{
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+    /* ................card3................... */
+    .card-3{
+        display: flex;
+        justify-content: center;
+        background-color: #d2e1fa;
+    }
+    .card3-caonainer{
+        height: 92%;
+        width: 90%;
+        background-color: #a3a8a8;
+        border-radius: 10px;
+        position: relative;
+        bottom: 70px;
+        background-color: #fff;
+        padding: 15px;
+    }
+    .card3-btn{
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+    /* ................card4................ */
+    .card-4{
+        display: flex;
+        justify-content: center;
+        background-color: #d2e1fa;
+    }
+    .card4-container{
+        height: 80%;
+        width: 90%;
+        background-color: #a3a8a8;
+        border-radius: 10px;
+        position: relative;
+        bottom: 70px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .card4-btn{
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+    /* ...............Thanking you.................. */
+    .thanking{
+        display: flex;
+        justify-content: center;
+        background-color: #d2e1fa;
+        height: 100%;
+    }
+    .thankCard-container{
+        height: 90%;
+        width: 90%;
+        background-color: #a3a8a8;
+        border-radius: 10px;
+        position: relative;
+        bottom: 70px;
+        background-color: #fff;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multikple steps page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    //
+    <div class="container-bg">
+        <div class="left">
+            <div class="card">
+                <div class="step" id="step1">1</div>
+                <div class="card-discription">
+                    <p class="steps">STEP 1</p>
+                    <h3 class="information">YOUR INFO</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="step" id="step2">2</div>
+                <div class="card-discription">
+                    <p>STEP 2</p>
+                    <h3 class="information">SELECT PLAN</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="step" id="step3">3</div>
+                <div class="card-discription">
+                    <p>STEP 3</p>
+                    <h3 class="information">ADD-ONS</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="step" id="step4">4</div>
+                <div class="card-discription">
+                    <p>STEP 4</p>
+                    <h3 class="information">SUMMARY</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <!-- step..1 -->
+            <div class="card-1" id="CardOne">
+                <form class="form-container">
+                    <h2 class="card-heading">Personal info</h2>
+                    <p class="card-description">please provide your name, email address, and phone number.</p>
+                    <div class="card1-inputs">
+                        <div class="labels">
+                            <label for="inputName">Name</label>
+                            <span class="error" id="nameError"></span>
+                        </div>
+                        <input type="text" class="inputs" id="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="card1-inputs">
+                        <div class="labels">
+                            <label for="EmailInput" class="labels">Email Address</label>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                        <input type="email" class="inputs" id="email" placeholder="ramsample@gmail.com">
+                    </div>
+                    <div class="card1-inputs">
+                        <div class="labels">
+                            <label for="TelInput" class="labels">Phone Number</label>
+                            <span class="error" id="phoneError"></span>
+                        </div>
+                        <input type="tel" class="inputs" id="phone" placeholder="e.g +1 234 567 890">
+                    </div>
+                </form> 
+                <div class="card1-btn">
+                    <button class="button" onclick="moveOnPage2()">Next Step</button>
+                </div>
+            </div>
+
+           <!--  Step..2 -->
+            <div class="card-2 hide" id="CardTwo">
+                <div class="card2-container1">
+                    <h2 class="card-heading">Select Your plan</h2>
+                    <p class="card-description">You Have the option of monthly or yearly billing.</p>
+                    <div class="card2-containers">
+                        <div class="container-cards2">
+                            <img src="images/icon-arcade.svg" class="card2-imges" />
+                            <div>
+                                <h2 class="card2-heading">Arcade</h2>
+                                <span class="card2-plans">$9/mo</span>
+                            </div>
+                        </div>
+                        <div class="container-cards2">
+                            <img src="images/icon-advanced.svg" class="card2-imges" />
+                            <div>
+                                <h2 class="card2-heading">Advanced</h2>
+                                <span class="card2-plans">$12/mo</span>
+                            </div>
+                        </div>
+                        <div class="container-cards2">
+                            <img src="images\icon-pro.svg" class="card2-imges" />
+                            <div>
+                                <h2 class="card2-heading">Pro</h2>
+                                <span class="card2-plans">$15/mo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2-btn">
+                    <button class="goback-btn" onclick="BackToPage1()">Go Back</button>
+                    <button class="button" onclick="moveOnPage3()">Next Step</button>
+                </div>
+            </div>
+
+             <!--  Step..3 -->
+            <div class="card-3 hide" id="CardThree">
+                <div class="card3-caonainer">
+                    <h2 class="card-heading">Pick add-ons</h2>
+                    <p class="card-description">Add-ons help enhance your gaming experience.</p>
+                    <div class="card3-container">
+                        <input type="checkbox" for="Checkbox1" name="onAdd" value="1" class="input-checkbox">
+                        <div>
+                            <h3 class="card3-headings" id="Checkbox1">Online service</h3>
+                            <p class="card3-plans">Access to multiplayer games</p>
+                        </div>
+                        <p class="card3-montly-plans">+$1/mo</p>
+                    </div>
+                    <div class="card3-container">
+                        <input type="checkbox" for="Checkbox2" name="onAdd" value="2" class="input-checkbox">
+                        <div>
+                            <h3 class="card3-headings" id="Checkbox2">Large Storage</h3>
+                            <p class="card3-plans">Extra 1TB of cloud save</p>
+                        </div>
+                        <p class="card3-montly-plans">+$1/mo</p>
+                    </div>    
+                    <div class="card3-container">
+                        <input type="checkbox" for="Checkbox3" name="onAdd" value="3" class="input-checkbox">
+                        <div>
+                            <h3 class="card3-headings" id="Checkbox3">Customizable Profile</h3>
+                            <p class="card3-plans">Custom theme on your profile</p>
+                        </div>
+                        <p class="card3-montly-plans">+$1/mo</p>
+                    </div> 
+                </div>
+                <div class="card3-btn">
+                    <button class="goback-btn" onclick="BackToPage2()">Go Back</button>
+                    <button class="button" onclick="moveOnPage4()">Next Step</button>
+                </div>  
+            </div> 
+
+             <!--  Step..4 -->
+            <div class="card-4 hide" id="CardFour">
+                <div class="card4-container">
+                    <h3 class="card-heading">Finishing up</h3>
+                    <p class="card3-plans">Double-check everything looks Ok before confirming.</p>
+                    <div class="card4-bg">
+                        <div class="card4-plans">
+                            <div>
+                                <h2 class="card3-headings">Arcade (Monthly)</h2>
+                                <p class="card3-plans"><a href="#">Change</a></p>
+                            </div>
+                            <div  class="card3-plans">
+                                $9/mo
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card4-plans">
+                            <p>Online service</p>
+                            <p>+$1/mo</p>
+                        </div>
+                        <div class="card4-plans">
+                            <p>Online service</p>
+                            <p>+$2/mo</p>
+                        </div>
+                    </div>
+                    <div class="card4-plans">
+                        <p>Total (Per month)</p>
+                        <p>+$2/mo</p>
+                    </div>
+                </div>
+                <div class="card4-btn">
+                    <button class="goback-btn" onclick="BackToPage3()">Go Back</button>
+                    <button class="confirm-btn" onclick="moveOnThankigPage()">Confirm</button>
+                </div>
+            </div>
+
+            <!-- Thanking you section -->
+            <div class="thanking hide" id="thankCard">
+                <div class="thankCard-container">
+                    <img src="images/icon-thank-you.svg" class="img">
+                    <h2 class="thanking-heading">Thank You!</h2>
+                    <p class="thanking-discribetion">Thanks for confirming subscribe! We hope yo u have fun using our platform. if yor ever need support, please feel free to email us at <span class="gmail-dec">ramsample@gmail.com.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
